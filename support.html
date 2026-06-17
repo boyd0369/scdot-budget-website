@@ -10,6 +10,8 @@
     -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SCDOT Maintenance Budget Management website providing budget planning, forecasting, contract pricing, district resources, and support information.">
+    <meta name="author" content="Harry Boyd">
     <title>SCDOT Maintenance Budget Management</title>
 
     <link rel="stylesheet" href="CSS/style.css">
@@ -48,7 +50,9 @@
 </p>
            </p>
 
-        <a href="#" class="btn">Contact Support</a>
+        <button class="btn" onclick="showSupportMessage()">Contact Support</button>
+        <p id="supportMessage"></p>
+
     </div>
 
     <div class="hero-image">
@@ -130,6 +134,12 @@
     </p>
 
 </footer>
+<script>
+function showSupportMessage() {
+    document.getElementById("supportMessage").innerHTML =
+    "Thank you for contacting the support center. A maintenance budget team member will follow up with you soon.";
+}
+</script>
 
 </body>
 
